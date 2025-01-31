@@ -64,15 +64,9 @@ Each sorting algorithm is tested with different input sizes, and execution time 
 
 ## Author
 
-**Your Name**\
-Course: [Course Name]\
-Instructor: [Instructor Name]
+**Peter Hoang**\
+Course: [Data Structures and Algorithms CSC-3130-02]\
 
 Feel free to contribute or suggest improvements!
 
----
-
-## License
-
-This project is licensed under the MIT License.
 
