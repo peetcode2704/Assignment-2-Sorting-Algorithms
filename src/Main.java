@@ -18,7 +18,5 @@
             for (int num : InsertionSorted) {
                 System.out.print(num + " ");
             }
-
-
         }
     }
