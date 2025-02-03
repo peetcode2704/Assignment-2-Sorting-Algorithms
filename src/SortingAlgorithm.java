@@ -1,4 +1,4 @@
 public interface SortingAlgorithm {
-    int[] sorty(int[] input);
+    int[] sorty(int[] inputArr);
 
 }

@@ -1,8 +1,8 @@
 public class BubbleSortClass implements SortingAlgorithm {
     @Override
-    public int[] sorty(int[] input) {
-        int n = input.length;
-        int[] a = input.clone();
+    public int[] sorty(int[] inputArr) {
+        int n = inputArr.length;
+        int[] a = inputArr.clone();
         int tmp;
         for (int i = 0; i < n - 1; i++) { // number of elements sorted
             for (int j = 0; j < n - 1 - i; j++) {

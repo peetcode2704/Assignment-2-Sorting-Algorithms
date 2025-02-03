@@ -6,7 +6,6 @@
 
             SortingAlgorithm Bsorter = new BubbleSortClass();
             int[] BubbleSorted = Bsorter.sorty(unsortedArray);
-
             System.out.print("Bubble Sort: ");
             for (int num : BubbleSorted) {
                 System.out.print(num + " ");
@@ -16,6 +15,13 @@
             int[] InsertionSorted = Isorter.sorty(unsortedArray);
             System.out.print("\nInsertion Sort: ");
             for (int num : InsertionSorted) {
+                System.out.print(num + " ");
+            }
+
+            SortingAlgorithm Ssorter = new SelectionSortClass();
+            int[] SelectionSorted = Ssorter.sorty(unsortedArray);
+            System.out.print("\nSelection Sort: ");
+            for (int num : SelectionSorted) {
                 System.out.print(num + " ");
             }
         }
