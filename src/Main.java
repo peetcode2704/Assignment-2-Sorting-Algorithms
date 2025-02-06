@@ -39,6 +39,13 @@
                 System.out.print(num + " ");
             }
 
+            SortingAlgorithm QuickSorter = new QuickSortClass();
+            int[] QuickSorted = QuickSorter.sorty(unsortedArray);
+            System.out.print("\nQuick Sort: ");
+            for (int num : QuickSorted) {
+                System.out.print(num + " ");
+            }
+
             Tester testAlgo = new Tester(MergeSorter);
 
             testAlgo.test(100,75000);
