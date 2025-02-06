@@ -4,31 +4,38 @@
         public static void main(String[] args) {
             int[] unsortedArray = {6, 5, 3, 1, 8, 7, 2, 4};
 
-            SortingAlgorithm Bubblesorter = new BubbleSortClass();
-            int[] BubbleSorted = Bubblesorter.sorty(unsortedArray);
+            SortingAlgorithm BubbleSorter = new BubbleSortClass();
+            int[] BubbleSorted = BubbleSorter.sorty(unsortedArray);
             System.out.print("Bubble Sort: ");
             for (int num : BubbleSorted) {
                 System.out.print(num + " ");
             }
 
-            SortingAlgorithm Insertionsorter = new InsertionSortClass();
-            int[] InsertionSorted = Insertionsorter.sorty(unsortedArray);
+            SortingAlgorithm InsertionSorter = new InsertionSortClass();
+            int[] InsertionSorted = InsertionSorter.sorty(unsortedArray);
             System.out.print("\nInsertion Sort: ");
             for (int num : InsertionSorted) {
                 System.out.print(num + " ");
             }
 
-            SortingAlgorithm Selectsorter = new SelectionSortClass();
-            int[] SelectionSorted = Selectsorter.sorty(unsortedArray);
+            SortingAlgorithm SelectSorter = new SelectionSortClass();
+            int[] SelectionSorted = SelectSorter.sorty(unsortedArray);
             System.out.print("\nSelection Sort: ");
             for (int num : SelectionSorted) {
                 System.out.print(num + " ");
             }
 
-            SortingAlgorithm Shellsorter = new ShellSortClass();
-            int[] ShellSorted = Shellsorter.sorty(unsortedArray);
+            SortingAlgorithm ShellSorter = new ShellSortClass();
+            int[] ShellSorted = ShellSorter.sorty(unsortedArray);
             System.out.print("\nShell Sort: ");
             for (int num : ShellSorted) {
+                System.out.print(num + " ");
+            }
+
+            SortingAlgorithm MergeSorter = new MergeSortClass();
+            int[] MergeSorted = MergeSorter.sorty(unsortedArray);
+            System.out.print("\nMerge Sort: ");
+            for (int num : MergeSorted) {
                 System.out.print(num + " ");
             }
         }
