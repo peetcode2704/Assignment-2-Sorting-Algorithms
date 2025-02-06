@@ -18,8 +18,8 @@
                 System.out.print(num + " ");
             }
 
-            SortingAlgorithm SelectSorter = new SelectionSortClass();
-            int[] SelectionSorted = SelectSorter.sorty(unsortedArray);
+            SortingAlgorithm SelectionSorter = new SelectionSortClass();
+            int[] SelectionSorted = SelectionSorter.sorty(unsortedArray);
             System.out.print("\nSelection Sort: ");
             for (int num : SelectionSorted) {
                 System.out.print(num + " ");
@@ -38,5 +38,9 @@
             for (int num : MergeSorted) {
                 System.out.print(num + " ");
             }
+
+            Tester testAlgo = new Tester(MergeSorter);
+
+            testAlgo.test(100,75000);
         }
     }
