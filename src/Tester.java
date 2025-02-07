@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Tester {
     SortingAlgorithm sortingAlgo;
+    double avg;
     public Tester (SortingAlgorithm sa) {
         sortingAlgo = sa;
     }
@@ -24,6 +25,11 @@ public class Tester {
             avgTime += SingleTest(size);
         }
         avgTime /= iteration;
+        avg = avgTime;
         System.out.println(avgTime);
+    }
+
+    public double getAvg() {
+        return avg;
     }
 }
