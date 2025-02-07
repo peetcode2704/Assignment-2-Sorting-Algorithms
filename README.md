@@ -2,7 +2,7 @@
 
 ## Assignment 2 – Sorting Algorithms
 
-**Deadline:** Tuesday, February 06, 2025, 9:59 PM
+**Deadline:** Thursday, February 06, 2025, 9:59 PM
 
 ### Objectives:
 
