@@ -46,8 +46,8 @@
                 System.out.print(num + " ");
             }
 
-            Tester testAlgo = new Tester(MergeSorter);
+            //Tester testAlgo = new Tester(MergeSorter);
 
-            testAlgo.test(100,75000);
+            //testAlgo.test(100,75000);
         }
     }

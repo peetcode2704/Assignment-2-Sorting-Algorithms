@@ -1,0 +1,66 @@
+Sorting algorithm – KSortedBubbleSortClass
+Sorted 100 elements in 0.00 ms (avg)
+Sorted 500 elements in 0.09 ms (avg)
+Sorted 1000 elements in 0.30 ms (avg)
+Sorted 2000 elements in 1.01 ms (avg)
+Sorted 5000 elements in 5.65 ms (avg)
+Sorted 10000 elements in 21.86 ms (avg)
+Sorted 20000 elements in 90.41 ms (avg)
+Sorted 75000 elements in 1743.31 ms (avg)
+Sorted 150000 elements in 7529.56 ms (avg)
+
+Sorting algorithm – KSortedInsertionSortClass
+Sorted 100 elements in 0.01 ms (avg)
+Sorted 500 elements in 0.04 ms (avg)
+Sorted 1000 elements in 0.04 ms (avg)
+Sorted 2000 elements in 0.06 ms (avg)
+Sorted 5000 elements in 0.30 ms (avg)
+Sorted 10000 elements in 1.16 ms (avg)
+Sorted 20000 elements in 4.50 ms (avg)
+Sorted 75000 elements in 61.99 ms (avg)
+Sorted 150000 elements in 250.46 ms (avg)
+
+Sorting algorithm – KSortedSelectionSortClass
+Sorted 100 elements in 0.00 ms (avg)
+Sorted 500 elements in 0.05 ms (avg)
+Sorted 1000 elements in 0.19 ms (avg)
+Sorted 2000 elements in 0.69 ms (avg)
+Sorted 5000 elements in 4.05 ms (avg)
+Sorted 10000 elements in 15.86 ms (avg)
+Sorted 20000 elements in 62.77 ms (avg)
+Sorted 75000 elements in 883.62 ms (avg)
+Sorted 150000 elements in 3526.48 ms (avg)
+
+Sorting algorithm – KSortedShellSortClass
+Sorted 100 elements in 0.00 ms (avg)
+Sorted 500 elements in 0.02 ms (avg)
+Sorted 1000 elements in 0.04 ms (avg)
+Sorted 2000 elements in 0.09 ms (avg)
+Sorted 5000 elements in 0.28 ms (avg)
+Sorted 10000 elements in 0.63 ms (avg)
+Sorted 20000 elements in 1.36 ms (avg)
+Sorted 75000 elements in 6.02 ms (avg)
+Sorted 150000 elements in 13.39 ms (avg)
+
+Sorting algorithm – KSortedQuickSortClass
+Sorted 100 elements in 0.00 ms (avg)
+Sorted 500 elements in 0.02 ms (avg)
+Sorted 1000 elements in 0.04 ms (avg)
+Sorted 2000 elements in 0.08 ms (avg)
+Sorted 5000 elements in 0.20 ms (avg)
+Sorted 10000 elements in 0.40 ms (avg)
+Sorted 20000 elements in 0.86 ms (avg)
+Sorted 75000 elements in 3.61 ms (avg)
+Sorted 150000 elements in 7.79 ms (avg)
+
+Sorting algorithm – KSortedMergeSortClass
+Sorted 100 elements in 0.00 ms (avg)
+Sorted 500 elements in 0.02 ms (avg)
+Sorted 1000 elements in 0.05 ms (avg)
+Sorted 2000 elements in 0.11 ms (avg)
+Sorted 5000 elements in 0.28 ms (avg)
+Sorted 10000 elements in 0.63 ms (avg)
+Sorted 20000 elements in 1.29 ms (avg)
+Sorted 75000 elements in 4.69 ms (avg)
+Sorted 150000 elements in 10.01 ms (avg)
+
