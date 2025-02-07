@@ -23,7 +23,9 @@ public class PerformanceGraph extends JFrame{
     }
 
     private JPanel createChartPanel() {
-        String chartTitle = "Algorithms Performance Comparison";
+        String chartTitle = "Algorithms Performance Comparison K-Sorted Version";
+       // String chartTitle2 = "Algorithms Performance Comparison K-Sorted Version";
+
         String xAxisLabel = "Size";
         String yAxisLabel = "Average Time";
 
@@ -38,6 +40,8 @@ public class PerformanceGraph extends JFrame{
     private XYDataset createDataset() {
         int[] sizes = {100, 500, 1000, 2000, 5000, 10000, 20000, 75000, 150000};
         XYSeriesCollection dataset = new XYSeriesCollection();
+        XYSeriesCollection dataset2 = new XYSeriesCollection();
+
         XYSeries BSort = new XYSeries("Bubble Sort");
         XYSeries ISort = new XYSeries("Insertion Sort");
         XYSeries MSort = new XYSeries("Merge Sort");
@@ -45,9 +49,16 @@ public class PerformanceGraph extends JFrame{
         XYSeries QSort = new XYSeries("Quick Sort");
         XYSeries SSort2 = new XYSeries("Shell Sort");
 
+        XYSeries BSortKVer = new XYSeries("Bubble Sort-KVer");
+        XYSeries ISortKVer = new XYSeries("Insertion Sort-KVer");
+        XYSeries MSortKVer = new XYSeries("Merge Sort-KVer");
+        XYSeries SSort1KVer = new XYSeries("Selection Sort-KVer");
+        XYSeries QSortKVer = new XYSeries("Quick Sort-KVer");
+        XYSeries SSort2KVer = new XYSeries("Shell Sort-KVer");
+
         //plug-in data points for Bubble Sort
         for (int size : sizes) {
-            BSort.add(size, new Tester(new BubbleSortClass()).test(20, size));
+           BSort.add(size, new Tester(new BubbleSortClass()).test(20, size));
         }
         //plug-in data points for Insertion Sort
         for (int size : sizes) {
@@ -80,8 +91,49 @@ public class PerformanceGraph extends JFrame{
         dataset.addSeries(SSort2);
         dataset.addSeries(QSort);
 
-        return dataset;
+    //KVersion Graph plots
+        for (int size : sizes) {
+            BSortKVer.add(size, new Tester(new BubbleSortClass()).testKSorted(20, size));
+        }
+        //plug-in data points for Insertion Sort
+        for (int size : sizes) {
+            ISortKVer.add(size, new Tester(new InsertionSortClass()).testKSorted(20, size));
+        }
+        //plug-in data points for Merge Sort
+        for (int size : sizes) {
+            MSortKVer.add(size, new Tester(new MergeSortClass()).testKSorted(20, size));
+        }
+
+        //plug-in data points for Selection Sort
+        for (int size : sizes) {
+            SSort1KVer.add(size, new Tester(new SelectionSortClass()).testKSorted(20, size));
+        }
+
+        //plug-in data points for Quick Sort
+        for (int size : sizes) {
+            QSortKVer.add(size, new Tester(new QuickSortClass()).testKSorted(20, size));
+        }
+
+        //plug-in data points for Shell Sort
+        for (int size : sizes) {
+            SSort2KVer.add(size, new Tester(new ShellSortClass()).test(20, size));
+        }
+
+        dataset2.addSeries(BSortKVer);
+        dataset2.addSeries(ISortKVer);
+        dataset2.addSeries(MSortKVer);
+        dataset2.addSeries(SSort1KVer);
+        dataset2.addSeries(SSort2KVer);
+        dataset2.addSeries(QSortKVer);
+
+    //Return one or another to get each graph.
+        return dataset2;
+
+        //return data;
+
     }
+
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
